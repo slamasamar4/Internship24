@@ -1,0 +1,17 @@
+.search-button {
+  background-color: #03e9f4; /* Match the color scheme of the login page */
+  color: white; /* Ensure text color is white */
+  padding: 15px 30px; /* Increase padding for a bigger button */
+  font-size: 18px; /* Increase font size */
+  font-weight: bold; /* Make the text bold */
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s, transform 0.3s; /* Add transition for hover effects */
+  text-transform: uppercase; /* Make the text uppercase */
+}
+
+.search-button:hover {
+  background-color: #029dbb; /* Darken the background color on hover */
+  transform: scale(1.05); /* Slightly increase the size on hover */
+}

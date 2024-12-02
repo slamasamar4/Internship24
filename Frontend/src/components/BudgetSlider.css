@@ -1,0 +1,18 @@
+.budget-slider-container {
+  background-color: rgba(0, 0, 0, 0.5); /* Match the background color of login box */
+  color: white; /* Ensure text color is white */
+  padding: 20px;
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif; /* Change font style */
+  text-align: center; /* Center align text */
+}
+
+.budget-slider-container label,
+.budget-slider-container p {
+  font-size: 18px; /* Adjust font size */
+}
+
+.budget-slider-container input[type="range"] {
+  width: 100%; /* Full width slider */
+  margin: 10px 0; /* Add some margin */
+}
