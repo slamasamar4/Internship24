@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -13,7 +13,9 @@ const Header = () => {
     <div className="header">
       {/* Left-aligned text */}
       <div className="header-title">
-        <h3>PC Recommendations</h3>
+        <Link to="/">
+          <h3>PC Recommendations</h3>
+        </Link>
       </div>
 
       {/* Right-aligned button */}

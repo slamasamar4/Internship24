@@ -2,11 +2,10 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  background-color: #282828;
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 2rem;
   flex-wrap: wrap;
-
 }
 
 .footer-section {
@@ -84,4 +83,27 @@
 
 .subscribe-form button:hover {
   background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-section {
+    margin-bottom: 1rem;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
 }

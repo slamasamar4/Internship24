@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+html {
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  overflow: hidden;
+}
+
 .homepage-container {
   display: flex;
   justify-content: center;
@@ -5,36 +13,37 @@
   height: 100vh;
 }
 
+/* General styles for the homepage */
 .homepage {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color:  #182029; /* Match the background color of login */
-  color: white; /* Ensure text color is white */
+  min-height: 100vh;
+  color: white;
 }
 
 .centered-heading {
   text-align: center;
-  margin-bottom: 1rem; /* Adjust as needed */
-  margin-top: 3rem; /* Adjust as needed */
+  margin: 2rem 0;
 }
 
 .centered-heading h1 {
   color: white;
   font-size: 2.5rem; /* Adjust the size as needed */
   font-weight: bold;
+  font-family: serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a shadow for better visibility */
 }
 
 .content-container {
   display: flex;
+  flex: 1;
   justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .sidebar {
+  flex: 1;
+  margin-right: 2rem;
   background-color: rgba(0, 0, 0, 0.5); /* Match the background color of login box */
   color: white; /* Ensure text color is white */
   padding: 20px;
@@ -53,9 +62,52 @@
   margin: 10px 0; /* Add some margin */
 }
 
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .image-container img {
   max-width: 100%;
   height: auto;
+}
+
+/* Header container styles */
+.header {
+  display: flex;
+  justify-content: space-between; /* Space between left and right elements */
+  align-items: center; /* Vertically center items */
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Match the background color of login box */
+  color: white;
+  height: 35px;
+}
+
+/* Header title (left-aligned) */
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  font-family: serif;
+}
+
+/* Login button (right-aligned) */
+.btn_login {
+  background-color: #FFD36A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 20px; /* Move the button slightly to the left */
+}
+
+.btn_login:hover {
+  background-color: #004494;
 }
 
 /* Responsive adjustments */
@@ -71,12 +123,27 @@
   }
 
   .sidebar {
+    margin-right: 0;
+    margin-bottom: 2rem;
     width: 100%;
-    margin-bottom: 1rem;
+  }
+
+  .image-container {
+    margin-bottom: 2rem;
   }
 
   .centered-heading h1 {
     font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn_login {
+    margin-right: 0; /* Reset margin for smaller screens */
+    margin-top: 10px; /* Add some space above the button */
   }
 }
 

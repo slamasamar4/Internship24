@@ -14,16 +14,16 @@ const Footer = () => {
         </p>
         <div className="social-icons">
           <a href="#twitter" aria-label="Twitter">
-            <i className="fab fa-twitter"></i>
+            <FaTwitter />
           </a>
           <a href="#facebook" aria-label="Facebook">
-            <i className="fab fa-facebook-f"></i>
+            <FaFacebookF />
           </a>
           <a href="#telegram" aria-label="Telegram">
-            <i className="fab fa-telegram-plane"></i>
+            <FaTelegramPlane />
           </a>
           <a href="#youtube" aria-label="YouTube">
-            <i className="fab fa-youtube"></i>
+            <FaYoutube />
           </a>
         </div>
       </div>
@@ -46,16 +46,9 @@ const Footer = () => {
 
       {/* Right Section */}
       <div className="footer-section">
-        <h3>Subscribe Us</h3>
-        <p>Signup for our newsletter to get the latest news in your inbox.</p>
-        <div className="subscribe-form">
-          <input
-            type="email"
-            placeholder="Info@YourEmail.com"
-            aria-label="Email address"
-          />
-          <button type="submit">→</button>
-        </div>
+        <h3>Contact Us</h3>
+        <p>Email: contact@pcrecommendation.com</p>
+        <p>Phone: +123 456 7890</p>
       </div>
     </footer>
   );

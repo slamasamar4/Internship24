@@ -14,7 +14,9 @@ const ResultsPage = () => {
 
   return (
     <div>
-      <h1>Search Results</h1>
+      <div className="search_title">
+        <h1>Search Results</h1>
+      </div>
       <p>Budget: {minBudget} TND - {maxBudget} TND</p>
       <p>Type: {type}</p>
       <div className="results-container">

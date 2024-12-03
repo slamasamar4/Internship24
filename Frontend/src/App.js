@@ -5,10 +5,9 @@ import HomePage from "./pages/HomePage";
 import ResultsPage from "./pages/ResultsPage";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import Login from "./components/loginSignin/Login"; // Corrected path
-//import Signup from "./components/loginSignin/Signup"; // Corrected path
-import ForgetPassword from "./components/loginSignin/ForgetPassword"; // Corrected path
-
+import Login from "./components/loginSignin/Login";
+import ForgetPassword from "./components/loginSignin/ForgetPassword";
+import Signup from "./components/loginSignin/Singup.jsx";
 function App() {
   return (
     <div className="App">
@@ -17,7 +16,9 @@ function App() {
         <div className="main-content">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/homepage" element={<HomePage />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/Signup" element={<Signup />} />
             <Route path="/forget-password" element={<ForgetPassword />} />
             <Route path="/results" element={<ResultsPage />} />
           </Routes>
