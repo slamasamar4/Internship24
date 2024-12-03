@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import BudgetSlider from "../components/BudgetSlider";
-import TypeSelector from "../components/TypeSelector";
-import SearchButton from "../components/SearchButton";
+import BudgetSlider from "../components/budget/BudgetSlider";
+import TypeSelector from "../components/budget/TypeSelector";
+import SearchButton from "../components/budget/SearchButton";
 import manImage from "../assets/laptop.png";
 import "./HomePage.css"; 
 
 const HomePage = () => {
-  const [budget, setBudget] = useState(2000); // Default budget
+  const [minBudget, setMinBudget] = useState(1000); // Default min budget
+  const [maxBudget, setMaxBudget] = useState(3000); // Default max budget
   const [type, setType] = useState(""); // Default type
 
   return (
@@ -16,9 +17,14 @@ const HomePage = () => {
       </div>
       <div className="content-container">
         <div className="sidebar">
-          <BudgetSlider budget={budget} setBudget={setBudget} />
+          <BudgetSlider 
+            minBudget={minBudget} 
+            setMinBudget={setMinBudget} 
+            maxBudget={maxBudget} 
+            setMaxBudget={setMaxBudget} 
+          />
           <TypeSelector type={type} setType={setType} />
-          <SearchButton budget={budget} type={type} />
+          <SearchButton minBudget={minBudget} maxBudget={maxBudget} type={type} />
         </div>
         <div className="image-container">
           <img src={manImage} alt="Man with laptop" />

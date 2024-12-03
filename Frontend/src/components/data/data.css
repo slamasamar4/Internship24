@@ -1,0 +1,7 @@
+/* data.css */
+.pc-item img {
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 10px auto; /* Center the image */
+}

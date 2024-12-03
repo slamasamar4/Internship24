@@ -1,7 +1,7 @@
 import React from "react";
-import laptopImage from "../assets/laptop.png"; // Replace with the correct path to your image
-import desktopImage from "../assets/DesktopImage.jpg"; // Replace with the correct path to your image
-import toolsImage from "../assets/toolsImage.jpg"; // Replace with the correct path to your image
+import laptopImage from "../../assets/LaptopImage.jpg"; // Replace with the correct path to your image
+import desktopImage from "../../assets/DesktopImage.jpg"; // Replace with the correct path to your image
+import toolsImage from "../../assets/toolsImage.jpg"; // Replace with the correct path to your image
 import "./TypeSelector.css"; // Ensure the correct path to the CSS file
 
 const TypeSelector = ({ type, setType }) => {

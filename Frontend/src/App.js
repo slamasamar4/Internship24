@@ -6,7 +6,7 @@ import ResultsPage from "./pages/ResultsPage";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Login from "./components/loginSignin/Login"; // Corrected path
-import Signup from "./components/loginSignin/Signup"; // Corrected path
+//import Signup from "./components/loginSignin/Signup"; // Corrected path
 import ForgetPassword from "./components/loginSignin/ForgetPassword"; // Corrected path
 
 function App() {
@@ -18,8 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/forget-password" element={<ForgetPassword />} /> {/* Define the forget password route */}
+            <Route path="/forget-password" element={<ForgetPassword />} />
             <Route path="/results" element={<ResultsPage />} />
           </Routes>
         </div>

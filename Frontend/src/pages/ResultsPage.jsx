@@ -1,40 +1,29 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-
-const ResultPage = () => {
+import PCItem from "../../src/components/data/PCItem.jsx"; // Reusable component
+import "./resultsPage.css"; // Styling
+const ResultsPage = () => {
   const location = useLocation();
-  const { budget, type } = location.state || {};
+  const { minBudget = 0, maxBudget = Infinity, type = "All", filteredPCs = [] } = location.state || {};
 
-  // Mocked data for display purposes
-  const results = [
-    { id: 1, name: "Laptop A", price: 1500, type: "Laptop" },
-    { id: 2, name: "PC B", price: 2000, type: "Desktop" },
-    { id: 3, name: "Headphone X", price: 100, type: "Tools" },
-  ];
-
-  const filteredResults = results.filter(
-    (item) => item.price <= budget && item.type === type
+  const finalFilteredPCs = filteredPCs.filter(
+    (pc) => pc.price >= minBudget && pc.price <= maxBudget && (type === "All" || pc.type === type)
   );
 
   return (
-    <div>
+    <div className="results-page">
       <h1>Search Results</h1>
-      <p>Budget: {budget} TND</p>
+      <p>Budget: {minBudget} TND - {maxBudget} TND</p>
       <p>Type: {type}</p>
-      <div>
-        {filteredResults.length > 0 ? (
-          filteredResults.map((item) => (
-            <div key={item.id}>
-              <h3>{item.name}</h3>
-              <p>Price: {item.price} TND</p>
-            </div>
-          ))
+      <div className="results-container">
+        {finalFilteredPCs.length > 0 ? (
+          finalFilteredPCs.map((pc) => <PCItem key={pc.id} pc={pc} />)
         ) : (
-          <p>No results match your criteria.</p>
+          <p className="no-results">No results found.</p>
         )}
       </div>
     </div>
   );
 };
 
-export default ResultPage;
+export default ResultsPage;
