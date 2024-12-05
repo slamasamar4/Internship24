@@ -23,8 +23,8 @@
 }
 
 .type-images img {
-  width: 50px; /* Adjust the size to be very small */
-  height: 50px; /* Ensure the height is also small */
+  width: 150px; /* Adjust the size to be very small */
+  height: 150px; /* Ensure the height is also small */
   cursor: pointer;
   border: 2px solid transparent;
   border-radius: 8px;

@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
-html {
+html, body {
   height: 100%;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
-  overflow: hidden;
-}
-
-body {
   margin: 0;
   font-family: 'Lato', sans-serif;
-  color: white;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  overflow: auto; /* Allow scrolling */
 }
 
 .App {

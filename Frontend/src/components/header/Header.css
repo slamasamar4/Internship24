@@ -4,7 +4,7 @@
   justify-content: space-between; /* Space between left and right elements */
   align-items: center; /* Vertically center items */
   padding: 1rem 2rem;
-  background-color: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   height: 35px;
 }
@@ -15,11 +15,22 @@
   font-weight: bold;
   margin: 0;
   font-family: serif;
+  color: white; /* Change font color to white */
+}
+
+/* Link styles */
+.header-title a {
+  color: white; /* Ensure link color is white */
+  text-decoration: none; /* Remove underline */
+}
+
+.header-title a:hover {
+  text-decoration: underline; /* Optional: Add underline on hover */
 }
 
 /* Login button (right-aligned) */
 .btn_login {
-  background-color: #FFD36A;
+  background-color: #e3b751;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -31,7 +42,7 @@
 }
 
 .btn_login:hover {
-  background-color: #004494;
+  background-color: #225896;
 }
 
 /* Responsive adjustments */

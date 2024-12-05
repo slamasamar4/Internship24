@@ -13,7 +13,7 @@ const ResultsPage = () => {
   );
 
   return (
-    <div>
+    <div className="results-page-container">
       <div className="search_title">
         <h1>Search Results</h1>
       </div>
@@ -30,7 +30,7 @@ const ResultsPage = () => {
             </div>
           ))
         ) : (
-          <p>No results found.</p>
+          <p className="no-results">No results found.</p>
         )}
       </div>
     </div>
@@ -38,4 +38,3 @@ const ResultsPage = () => {
 };
 
 export default ResultsPage;
-

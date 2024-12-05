@@ -8,6 +8,8 @@ const PCItem = ({ pc }) => {
       <img src={pc.image} alt={pc.name} />
       <p>Price: {pc.price} TND</p>
       <p>Type: {pc.type}</p>
+      <p>description : {pc.description}</p>
+
     </div>
   );
 };
